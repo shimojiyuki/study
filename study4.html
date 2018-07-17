@@ -1,0 +1,41 @@
+```<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>レイアウトしてみよう</title>
+  <style>
+    .blueBox,
+    .redBox,
+    .greenBox {
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      color: #fff;
+      float: left;
+    }
+
+    .blueBox {
+      background-color: #00a;
+    }
+    .redBox {
+      background-color: #a00;
+    }
+    .greenBox {
+      background-color: #0a0;
+    }
+    .clearfix::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="main clearfix">
+    <div class="blueBox">青</div>
+    <div class="redBox">赤</div>
+  </div>
+  <div class="greenBox">緑</div>
+</body>
+</html>```
